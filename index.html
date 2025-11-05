@@ -17,6 +17,45 @@
             color: #2c2c2c;
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
+            color-scheme: only light;
+        }
+        
+        * {
+            color-scheme: only light;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body, .container, .header, .content, .footer {
+                background: #ffffff !important;
+                color: #2c2c2c !important;
+            }
+            
+            .header h1, .section-title, .schedule-title, .intro, .location-text, .distance {
+                color: #2c2c2c !important;
+            }
+            
+            .accent, .footer-accent, .time, .check-icon {
+                color: #ffad00 !important;
+            }
+            
+            .checklist-item {
+                color: #555 !important;
+            }
+            
+            .tip-text {
+                background: linear-gradient(135deg, #fffbf5 0%, #ffffff 100%) !important;
+                color: #2c2c2c !important;
+            }
+            
+            .footer {
+                background: #2c2c2c !important;
+                color: #ffffff !important;
+            }
+            
+            .time-slot {
+                background: #ffffff !important;
+                border-color: #f0f0f0 !important;
+            }
         }
         
         .container {
@@ -402,6 +441,11 @@
         </div>
         
         <div class="footer">
+            A gente se vê <span class="footer-accent">no lago!</span>
+        </div>
+    </div>
+</body>
+</html>
             A gente se vê <span class="footer-accent">no lago!</span>
         </div>
     </div>
