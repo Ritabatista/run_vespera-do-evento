@@ -13,22 +13,16 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f8f8f8;
+            background: #ffffff;
             color: #2c2c2c;
-            line-height: 1.6;
+            line-height: 1.7;
             -webkit-font-smoothing: antialiased;
-        }
-        
-        .email-wrapper {
-            background: #f8f8f8;
-            padding: 20px 0;
         }
         
         .container {
             max-width: 600px;
             margin: 0 auto;
             background: #ffffff;
-            overflow: hidden;
         }
         
         .banner {
@@ -43,18 +37,18 @@
         }
         
         .header {
-            padding: 50px 40px;
+            padding: 50px 50px 40px;
             text-align: center;
             background: #ffffff;
         }
         
         .header h1 {
-            font-size: 48px;
+            font-size: 52px;
             font-weight: 700;
             color: #2c2c2c;
-            margin-bottom: 12px;
-            letter-spacing: -1px;
-            line-height: 1.2;
+            margin-bottom: 10px;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
         }
         
         .accent {
@@ -62,182 +56,136 @@
         }
         
         .header p {
-            font-size: 14px;
-            color: #888;
-            font-weight: 600;
+            font-size: 13px;
+            color: #999;
+            font-weight: 500;
             letter-spacing: 3px;
             text-transform: uppercase;
         }
         
         .content {
-            padding: 40px;
-            background: #fafafa;
+            padding: 20px 50px 50px;
+            background: #ffffff;
         }
         
         .intro {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 40px;
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 50px;
             color: #2c2c2c;
             text-align: center;
-            padding: 35px 40px;
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-        }
-        
-        .section {
-            margin-bottom: 40px;
         }
         
         .section-title {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 700;
             margin-bottom: 25px;
+            margin-top: 50px;
             color: #2c2c2c;
-            padding-left: 15px;
-            border-left: 4px solid #ffad00;
         }
         
         .checklist {
-            background: #ffffff;
-            padding: 30px 35px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin-bottom: 50px;
         }
         
         .checklist-item {
             display: flex;
             align-items: flex-start;
-            padding: 15px 0;
+            padding: 12px 0;
             font-size: 16px;
-            color: #2c2c2c;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        .checklist-item:last-child {
-            border-bottom: none;
+            color: #555;
+            line-height: 1.6;
         }
         
         .check-icon {
-            width: 24px;
-            height: 24px;
-            background: #ffad00;
-            border-radius: 50%;
-            margin-right: 15px;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
+            color: #ffad00;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 18px;
+            margin-right: 12px;
+            flex-shrink: 0;
         }
         
-        .check-icon::after {
-            content: '✓';
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #fff9ed 0%, #ffffff 100%);
-            padding: 35px 40px;
-            border-radius: 16px;
-            text-align: center;
+        .tip-text {
             font-size: 17px;
             line-height: 1.8;
             color: #2c2c2c;
-            border: 2px solid #ffad00;
-            box-shadow: 0 4px 20px rgba(255,173,0,0.15);
+            padding: 30px;
+            background: linear-gradient(135deg, #fffbf5 0%, #ffffff 100%);
+            border-left: 3px solid #ffad00;
+            margin-bottom: 50px;
         }
         
-        .tip-box strong {
+        .tip-text strong {
             color: #2c2c2c;
             font-weight: 700;
-            font-size: 18px;
+        }
+        
+        .schedule-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            margin-top: 50px;
+            color: #2c2c2c;
         }
         
         .schedule {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin-bottom: 50px;
         }
         
         .time-slot {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 25px;
-            margin-bottom: 12px;
-            background: #fafafa;
-            border-radius: 12px;
-            transition: all 0.3s ease;
+            padding: 16px 0;
+            border-bottom: 1px solid #f0f0f0;
         }
         
         .time-slot:last-child {
-            margin-bottom: 0;
-        }
-        
-        .time-slot:hover {
-            background: #fff9ed;
-            transform: translateX(2px);
+            border-bottom: none;
         }
         
         .distance {
             font-weight: 600;
-            font-size: 17px;
+            font-size: 16px;
             color: #2c2c2c;
         }
         
         .time {
-            color: #ffffff;
-            background: #ffad00;
+            color: #ffad00;
             font-weight: 700;
             font-size: 16px;
             letter-spacing: 0.5px;
-            padding: 10px 24px;
-            border-radius: 25px;
-            box-shadow: 0 2px 8px rgba(255,173,0,0.3);
         }
         
-        .location {
+        .location-section {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px solid #f5f5f5;
             text-align: center;
-            padding: 45px 40px;
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
         }
         
-        .location-title {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 25px;
-            color: #ffad00;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-        }
-        
-        .location-address {
+        .location-text {
             font-size: 17px;
             color: #2c2c2c;
-            line-height: 2;
+            line-height: 1.9;
         }
         
-        .location-address strong {
-            color: #2c2c2c;
+        .location-text strong {
             font-weight: 700;
+            font-size: 22px;
             display: block;
-            margin-bottom: 15px;
-            font-size: 24px;
+            margin-bottom: 10px;
+            color: #2c2c2c;
         }
         
         .footer {
             background: #2c2c2c;
             color: #ffffff;
             text-align: center;
-            padding: 50px 40px;
+            padding: 50px;
             font-size: 20px;
             font-weight: 600;
+            margin-top: 50px;
         }
         
         .footer-accent {
@@ -245,104 +193,88 @@
             font-weight: 700;
         }
         
-        .divider {
-            height: 40px;
-        }
-        
         /* Tablet */
         @media (max-width: 768px) {
             .header {
-                padding: 40px 30px;
+                padding: 40px 35px 30px;
             }
             
             .header h1 {
-                font-size: 40px;
+                font-size: 44px;
             }
             
             .content {
-                padding: 35px 30px;
+                padding: 20px 35px 40px;
             }
             
             .intro {
-                font-size: 17px;
-                padding: 30px 35px;
-            }
-            
-            .section-title {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
         
         /* Mobile */
         @media (max-width: 480px) {
-            .email-wrapper {
-                padding: 0;
-            }
-            
             .header {
-                padding: 35px 25px;
+                padding: 30px 25px 25px;
             }
             
             .header h1 {
-                font-size: 32px;
+                font-size: 36px;
+                letter-spacing: -1px;
             }
             
             .header p {
-                font-size: 12px;
+                font-size: 11px;
                 letter-spacing: 2px;
             }
             
             .content {
-                padding: 30px 20px;
+                padding: 15px 25px 40px;
             }
             
             .intro {
-                font-size: 16px;
-                padding: 25px 20px;
-                margin-bottom: 35px;
-            }
-            
-            .section {
-                margin-bottom: 35px;
+                font-size: 17px;
+                margin-bottom: 40px;
             }
             
             .section-title {
                 font-size: 18px;
                 margin-bottom: 20px;
-                padding-left: 12px;
+                margin-top: 40px;
             }
             
             .checklist {
-                padding: 25px 20px;
+                margin-bottom: 40px;
             }
             
             .checklist-item {
-                padding: 12px 0;
+                padding: 10px 0;
                 font-size: 15px;
             }
             
             .check-icon {
-                width: 20px;
-                height: 20px;
-                font-size: 12px;
-            }
-            
-            .tip-box {
-                padding: 25px 20px;
-                font-size: 15px;
-            }
-            
-            .tip-box strong {
                 font-size: 16px;
+                margin-right: 10px;
+            }
+            
+            .tip-text {
+                font-size: 16px;
+                padding: 25px 20px;
+                margin-bottom: 40px;
+            }
+            
+            .schedule-title {
+                font-size: 18px;
+                margin-bottom: 20px;
+                margin-top: 40px;
             }
             
             .schedule {
-                padding: 25px 20px;
+                margin-bottom: 40px;
             }
             
             .time-slot {
-                padding: 16px 20px;
-                margin-bottom: 10px;
+                padding: 14px 0;
             }
             
             .distance {
@@ -350,130 +282,110 @@
             }
             
             .time {
-                font-size: 14px;
-                padding: 8px 18px;
+                font-size: 15px;
             }
             
-            .location {
-                padding: 35px 20px;
+            .location-section {
+                margin-top: 40px;
+                padding-top: 30px;
             }
             
-            .location-title {
-                margin-bottom: 20px;
-                font-size: 12px;
-            }
-            
-            .location-address {
+            .location-text {
                 font-size: 16px;
             }
             
-            .location-address strong {
-                font-size: 20px;
-                margin-bottom: 12px;
+            .location-text strong {
+                font-size: 19px;
             }
             
             .footer {
                 padding: 40px 25px;
-                font-size: 17px;
-            }
-            
-            .divider {
-                height: 30px;
+                font-size: 18px;
+                margin-top: 40px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="email-wrapper">
-        <div class="container">
-            <div class="banner">
-                <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Header.png" alt="The Best Run 2025">
-            </div>
+    <div class="container">
+        <div class="banner">
+            <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Header.png" alt="The Best Run 2025">
+        </div>
+        
+        <div class="header">
+            <h1>É <span class="accent">amanhã</span></h1>
+            <p>The Best Run 2025</p>
+        </div>
+        
+        <div class="content">
+            <p class="intro">
+                Amanhã você vai ser um vitorioso cruzando a linha de chegada da The Best Run 2025. Dorme cedo, sonha alto e acorda pronto para fazer bonito!
+            </p>
             
-            <div class="header">
-                <h1>É <span class="accent">amanhã</span></h1>
-                <p>The Best Run 2025</p>
-            </div>
+            <h2 class="section-title">Bora fazer o check final?</h2>
             
-            <div class="content">
-                <div class="intro">
-                    Amanhã você vai ser um vitorioso cruzando a linha de chegada da The Best Run 2025. Dorme cedo, sonha alto e acorda pronto para fazer bonito!
+            <div class="checklist">
+                <div class="checklist-item">
+                    <span class="check-icon">✓</span>
+                    <span>Kit retirado e conferido</span>
                 </div>
-                
-                <div class="section">
-                    <h2 class="section-title">Bora fazer o check final?</h2>
-                    <div class="checklist">
-                        <div class="checklist-item">
-                            <span class="check-icon"></span>
-                            <span>Kit retirado e conferido</span>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon"></span>
-                            <span>Número de peito já pregado na camiseta</span>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon"></span>
-                            <span>Tênis de confiança separado</span>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon"></span>
-                            <span>Garrafa de água cheia</span>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="check-icon"></span>
-                            <span>Celular carregado pra registrar tudo</span>
-                        </div>
-                    </div>
+                <div class="checklist-item">
+                    <span class="check-icon">✓</span>
+                    <span>Número de peito já pregado na camiseta</span>
                 </div>
-                
-                <div class="divider"></div>
-                
-                <div class="tip-box">
-                    <strong>A dica da #bestie é:</strong> chegar com antecedência, dar um visu no ambiente, alongar com calma, sentir a vibe e socializar com a galera!
+                <div class="checklist-item">
+                    <span class="check-icon">✓</span>
+                    <span>Tênis de confiança separado</span>
                 </div>
-                
-                <div class="divider"></div>
-                
-                <div class="section">
-                    <h2 class="section-title">⏰ Anota aí os horários das largadas:</h2>
-                    <div class="schedule">
-                        <div class="time-slot">
-                            <span class="distance">21km</span>
-                            <span class="time">06h00</span>
-                        </div>
-                        <div class="time-slot">
-                            <span class="distance">10km</span>
-                            <span class="time">06h15</span>
-                        </div>
-                        <div class="time-slot">
-                            <span class="distance">5km</span>
-                            <span class="time">06h20</span>
-                        </div>
-                        <div class="time-slot">
-                            <span class="distance">Kangoo 5km</span>
-                            <span class="time">06h22</span>
-                        </div>
-                        <div class="time-slot">
-                            <span class="distance">Kids</span>
-                            <span class="time">09h</span>
-                        </div>
-                    </div>
+                <div class="checklist-item">
+                    <span class="check-icon">✓</span>
+                    <span>Garrafa de água cheia</span>
                 </div>
-                
-                <div class="divider"></div>
-                
-                <div class="location">
-                    <div class="location-title">Nos encontramos no</div>
-                    <div class="location-address">
-                        <strong>Aterro do Lago Igapó 2</strong>
-                        Rua Prof. Joaquim de Matos Barreto – Londrina/PR
-                    </div>
+                <div class="checklist-item">
+                    <span class="check-icon">✓</span>
+                    <span>Celular carregado pra registrar tudo</span>
                 </div>
             </div>
             
-            <div class="footer">
-                A gente se vê <span class="footer-accent">no lago!</span>
+            <div class="tip-text">
+                <strong>A dica da #bestie é:</strong> chegar com antecedência, dar um visu no ambiente, alongar com calma, sentir a vibe e socializar com a galera!
             </div>
+            
+            <h2 class="schedule-title">⏰ Anota aí os horários das largadas:</h2>
+            
+            <div class="schedule">
+                <div class="time-slot">
+                    <span class="distance">21km</span>
+                    <span class="time">06h00</span>
+                </div>
+                <div class="time-slot">
+                    <span class="distance">10km</span>
+                    <span class="time">06h15</span>
+                </div>
+                <div class="time-slot">
+                    <span class="distance">5km</span>
+                    <span class="time">06h20</span>
+                </div>
+                <div class="time-slot">
+                    <span class="distance">Kangoo 5km</span>
+                    <span class="time">06h22</span>
+                </div>
+                <div class="time-slot">
+                    <span class="distance">Kids</span>
+                    <span class="time">09h</span>
+                </div>
+            </div>
+            
+            <div class="location-section">
+                <div class="location-text">
+                    <strong>Nos encontramos no Aterro do Lago Igapó 2</strong>
+                    Rua Prof. Joaquim de Matos Barreto – Londrina/PR
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            A gente se vê <span class="footer-accent">no lago!</span>
         </div>
     </div>
 </body>
