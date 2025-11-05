@@ -12,94 +12,106 @@
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f5f5;
-            color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f8f8f8;
+            color: #2c2c2c;
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .email-wrapper {
+            background: #f8f8f8;
+            padding: 20px 0;
         }
         
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background: #fff;
+            background: #ffffff;
+            overflow: hidden;
+        }
+        
+        .banner {
+            width: 100%;
+            line-height: 0;
         }
         
         .banner img {
             width: 100%;
+            height: auto;
             display: block;
         }
         
         .header {
-            padding: 40px 40px 35px;
+            padding: 50px 40px;
             text-align: center;
-            background: #fff;
+            background: #ffffff;
         }
         
         .header h1 {
-            font-size: 42px;
-            font-weight: 300;
-            color: #1a1a1a;
-            margin-bottom: 10px;
-            letter-spacing: -0.5px;
+            font-size: 48px;
+            font-weight: 700;
+            color: #2c2c2c;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+            line-height: 1.2;
         }
         
         .accent {
             color: #ffad00;
-            font-weight: 500;
         }
         
         .header p {
-            font-size: 12px;
-            color: #666;
-            font-weight: 500;
-            letter-spacing: 2px;
+            font-size: 14px;
+            color: #888;
+            font-weight: 600;
+            letter-spacing: 3px;
             text-transform: uppercase;
         }
         
         .content {
-            padding: 35px 40px;
+            padding: 40px;
             background: #fafafa;
         }
         
         .intro {
-            font-size: 16px;
-            line-height: 1.7;
-            margin-bottom: 35px;
-            color: #333;
-            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: #2c2c2c;
             text-align: center;
-            padding: 25px;
-            background: #fff;
-            border-left: 3px solid #ffad00;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 35px 40px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
         }
         
         .section {
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
         
         .section-title {
-            font-size: 11px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #ffad00;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #2c2c2c;
+            padding-left: 15px;
+            border-left: 4px solid #ffad00;
         }
         
         .checklist {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            background: #ffffff;
+            padding: 30px 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
         }
         
         .checklist-item {
             display: flex;
-            align-items: center;
-            padding: 10px 0;
-            font-size: 14px;
-            color: #444;
+            align-items: flex-start;
+            padding: 15px 0;
+            font-size: 16px;
+            color: #2c2c2c;
             border-bottom: 1px solid #f0f0f0;
         }
         
@@ -108,319 +120,360 @@
         }
         
         .check-icon {
-            width: 5px;
-            height: 5px;
+            width: 24px;
+            height: 24px;
             background: #ffad00;
             border-radius: 50%;
             margin-right: 15px;
             flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .check-icon::after {
+            content: '✓';
         }
         
         .tip-box {
-            background: linear-gradient(135deg, #fff7e6 0%, #fff 100%);
-            padding: 25px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #fff9ed 0%, #ffffff 100%);
+            padding: 35px 40px;
+            border-radius: 16px;
             text-align: center;
-            font-size: 14px;
-            line-height: 1.7;
-            color: #333;
-            border: 1px solid #ffe9b3;
-            box-shadow: 0 2px 8px rgba(255,173,0,0.08);
+            font-size: 17px;
+            line-height: 1.8;
+            color: #2c2c2c;
+            border: 2px solid #ffad00;
+            box-shadow: 0 4px 20px rgba(255,173,0,0.15);
         }
         
         .tip-box strong {
-            color: #e69500;
-            font-weight: 600;
+            color: #2c2c2c;
+            font-weight: 700;
+            font-size: 18px;
         }
         
         .schedule {
-            background: #fff;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-            border: 1px solid #f0f0f0;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
         }
         
         .time-slot {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 20px;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px solid #f5f5f5;
+            padding: 20px 25px;
+            margin-bottom: 12px;
+            background: #fafafa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
         }
         
         .time-slot:last-child {
-            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .time-slot:hover {
+            background: #fff9ed;
+            transform: translateX(2px);
         }
         
         .distance {
             font-weight: 600;
-            font-size: 15px;
-            color: #1a1a1a;
+            font-size: 17px;
+            color: #2c2c2c;
         }
         
         .time {
-            color: #fff;
+            color: #ffffff;
             background: #ffad00;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 16px;
             letter-spacing: 0.5px;
-            padding: 8px 20px;
-            border-radius: 20px;
-            text-align: center;
-            white-space: nowrap;
+            padding: 10px 24px;
+            border-radius: 25px;
+            box-shadow: 0 2px 8px rgba(255,173,0,0.3);
         }
         
         .location {
             text-align: center;
-            padding: 25px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 45px 40px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
         }
         
         .location-title {
-            font-size: 11px;
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             color: #ffad00;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 2.5px;
         }
         
         .location-address {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.7;
+            font-size: 17px;
+            color: #2c2c2c;
+            line-height: 2;
         }
         
         .location-address strong {
-            color: #1a1a1a;
-            font-weight: 600;
+            color: #2c2c2c;
+            font-weight: 700;
             display: block;
-            margin-bottom: 8px;
-            font-size: 15px;
+            margin-bottom: 15px;
+            font-size: 24px;
         }
         
         .footer {
-            background: linear-gradient(135deg, #ffad00 0%, #ffc933 100%);
-            color: #1a1a1a;
+            background: #2c2c2c;
+            color: #ffffff;
             text-align: center;
-            padding: 40px;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+            padding: 50px 40px;
+            font-size: 20px;
+            font-weight: 600;
         }
         
         .footer-accent {
+            color: #ffad00;
             font-weight: 700;
         }
         
         .divider {
-            width: 60px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #ffad00, transparent);
-            margin: 30px auto;
+            height: 40px;
         }
         
         /* Tablet */
         @media (max-width: 768px) {
             .header {
-                padding: 35px 30px 30px;
+                padding: 40px 30px;
             }
             
             .header h1 {
-                font-size: 36px;
+                font-size: 40px;
             }
             
             .content {
-                padding: 30px 25px;
+                padding: 35px 30px;
             }
             
             .intro {
-                font-size: 15px;
-                padding: 20px;
+                font-size: 17px;
+                padding: 30px 35px;
             }
             
-            .section {
-                margin-bottom: 30px;
+            .section-title {
+                font-size: 20px;
             }
         }
         
         /* Mobile */
         @media (max-width: 480px) {
+            .email-wrapper {
+                padding: 0;
+            }
+            
             .header {
-                padding: 25px 20px 20px;
+                padding: 35px 25px;
             }
             
             .header h1 {
-                font-size: 28px;
+                font-size: 32px;
             }
             
             .header p {
-                font-size: 11px;
+                font-size: 12px;
+                letter-spacing: 2px;
             }
             
             .content {
-                padding: 25px 20px;
+                padding: 30px 20px;
             }
             
             .intro {
-                font-size: 14px;
-                margin-bottom: 30px;
-                padding: 18px;
+                font-size: 16px;
+                padding: 25px 20px;
+                margin-bottom: 35px;
             }
             
             .section {
-                margin-bottom: 25px;
+                margin-bottom: 35px;
             }
             
             .section-title {
-                font-size: 10px;
-                margin-bottom: 18px;
+                font-size: 18px;
+                margin-bottom: 20px;
+                padding-left: 12px;
             }
             
-            .checklist, .schedule, .location {
-                padding: 20px;
+            .checklist {
+                padding: 25px 20px;
             }
             
-            .time-slot {
+            .checklist-item {
                 padding: 12px 0;
-                gap: 15px;
+                font-size: 15px;
             }
             
-            .distance {
-                font-size: 14px;
-            }
-            
-            .time {
-                font-size: 13px;
-                padding: 6px 14px;
-            }
-            
-            .checklist-item, .time-slot {
-                padding: 9px 0;
-                font-size: 13px;
+            .check-icon {
+                width: 20px;
+                height: 20px;
+                font-size: 12px;
             }
             
             .tip-box {
-                padding: 18px;
-                font-size: 13px;
+                padding: 25px 20px;
+                font-size: 15px;
+            }
+            
+            .tip-box strong {
+                font-size: 16px;
+            }
+            
+            .schedule {
+                padding: 25px 20px;
+            }
+            
+            .time-slot {
+                padding: 16px 20px;
+                margin-bottom: 10px;
+            }
+            
+            .distance {
+                font-size: 15px;
+            }
+            
+            .time {
+                font-size: 14px;
+                padding: 8px 18px;
+            }
+            
+            .location {
+                padding: 35px 20px;
+            }
+            
+            .location-title {
+                margin-bottom: 20px;
+                font-size: 12px;
             }
             
             .location-address {
-                font-size: 13px;
+                font-size: 16px;
+            }
+            
+            .location-address strong {
+                font-size: 20px;
+                margin-bottom: 12px;
             }
             
             .footer {
-                padding: 35px 20px;
-                font-size: 14px;
+                padding: 40px 25px;
+                font-size: 17px;
             }
             
             .divider {
-                margin: 25px auto;
-                width: 50px;
-            }
-        }
-        
-        /* Desktop grande */
-        @media (min-width: 769px) {
-            .container {
-                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+                height: 30px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="banner">
-            <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Header.png" alt="The Best Run 2025">
-        </div>
-        
-        <div class="header">
-            <h1>É <span class="accent">amanhã</span></h1>
-            <p>The Best Run 2025</p>
-        </div>
-        
-        <div class="content">
-            <div class="intro">
-                Amanhã você vai ser um vitorioso cruzando a linha de chegada da The Best Run 2025. Dorme cedo, sonha alto e acorda pronto para fazer bonito!
+    <div class="email-wrapper">
+        <div class="container">
+            <div class="banner">
+                <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Header.png" alt="The Best Run 2025">
             </div>
             
-            <div class="section">
-                <h2 class="section-title">Bora fazer o check final?</h2>
-                <div class="checklist">
-                    <div class="checklist-item">
-                        <span class="check-icon"></span>
-                        <span>Kit retirado e conferido</span>
+            <div class="header">
+                <h1>É <span class="accent">amanhã</span></h1>
+                <p>The Best Run 2025</p>
+            </div>
+            
+            <div class="content">
+                <div class="intro">
+                    Amanhã você vai ser um vitorioso cruzando a linha de chegada da The Best Run 2025. Dorme cedo, sonha alto e acorda pronto para fazer bonito!
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Bora fazer o check final?</h2>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <span class="check-icon"></span>
+                            <span>Kit retirado e conferido</span>
+                        </div>
+                        <div class="checklist-item">
+                            <span class="check-icon"></span>
+                            <span>Número de peito já pregado na camiseta</span>
+                        </div>
+                        <div class="checklist-item">
+                            <span class="check-icon"></span>
+                            <span>Tênis de confiança separado</span>
+                        </div>
+                        <div class="checklist-item">
+                            <span class="check-icon"></span>
+                            <span>Garrafa de água cheia</span>
+                        </div>
+                        <div class="checklist-item">
+                            <span class="check-icon"></span>
+                            <span>Celular carregado pra registrar tudo</span>
+                        </div>
                     </div>
-                    <div class="checklist-item">
-                        <span class="check-icon"></span>
-                        <span>Número de peito já pregado na camiseta</span>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="tip-box">
+                    <strong>A dica da #bestie é:</strong> chegar com antecedência, dar um visu no ambiente, alongar com calma, sentir a vibe e socializar com a galera!
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="section">
+                    <h2 class="section-title">⏰ Anota aí os horários das largadas:</h2>
+                    <div class="schedule">
+                        <div class="time-slot">
+                            <span class="distance">21km</span>
+                            <span class="time">06h00</span>
+                        </div>
+                        <div class="time-slot">
+                            <span class="distance">10km</span>
+                            <span class="time">06h15</span>
+                        </div>
+                        <div class="time-slot">
+                            <span class="distance">5km</span>
+                            <span class="time">06h20</span>
+                        </div>
+                        <div class="time-slot">
+                            <span class="distance">Kangoo 5km</span>
+                            <span class="time">06h22</span>
+                        </div>
+                        <div class="time-slot">
+                            <span class="distance">Kids</span>
+                            <span class="time">09h</span>
+                        </div>
                     </div>
-                    <div class="checklist-item">
-                        <span class="check-icon"></span>
-                        <span>Tênis de confiança separado</span>
-                    </div>
-                    <div class="checklist-item">
-                        <span class="check-icon"></span>
-                        <span>Garrafa de água cheia</span>
-                    </div>
-                    <div class="checklist-item">
-                        <span class="check-icon"></span>
-                        <span>Celular carregado pra registrar tudo</span>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="location">
+                    <div class="location-title">Nos encontramos no</div>
+                    <div class="location-address">
+                        <strong>Aterro do Lago Igapó 2</strong>
+                        Rua Prof. Joaquim de Matos Barreto – Londrina/PR
                     </div>
                 </div>
             </div>
             
-            <div class="divider"></div>
-            
-            <div class="tip-box">
-                <strong>A dica da #bestie é:</strong> chegar com antecedência, dar um visu no ambiente, alongar com calma, sentir a vibe e socializar com a galera!
+            <div class="footer">
+                A gente se vê <span class="footer-accent">no lago!</span>
             </div>
-            
-            <div class="divider"></div>
-            
-            <div class="section">
-                <h2 class="section-title">⏰ Anota aí os horários das largadas:</h2>
-                <div class="schedule">
-                    <div class="time-slot">
-                        <span class="distance">21km</span>
-                        <span class="time">06h00</span>
-                    </div>
-                    <div class="time-slot">
-                        <span class="distance">10km</span>
-                        <span class="time">06h15</span>
-                    </div>
-                    <div class="time-slot">
-                        <span class="distance">5km</span>
-                        <span class="time">06h20</span>
-                    </div>
-                    <div class="time-slot">
-                        <span class="distance">Kangoo 5km</span>
-                        <span class="time">06h22</span>
-                    </div>
-                    <div class="time-slot">
-                        <span class="distance">Kids</span>
-                        <span class="time">09h</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <div class="location">
-                <div class="location-title">Nos encontramos no</div>
-                <div class="location-address">
-                    <strong>Aterro do Lago Igapó 2</strong>
-                    Rua Prof. Joaquim de Matos Barreto – Londrina/PR
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer">
-            A gente se vê <span class="footer-accent">no lago</span>
         </div>
     </div>
 </body>
