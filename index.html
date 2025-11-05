@@ -13,9 +13,9 @@
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #000;
-            color: #000;
-            line-height: 1.8;
+            background: #f5f5f5;
+            color: #1a1a1a;
+            line-height: 1.6;
         }
         
         .container {
@@ -24,18 +24,22 @@
             background: #fff;
         }
         
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+        
         .header {
-            padding: 80px 40px 60px;
+            padding: 40px 40px 35px;
             text-align: center;
             background: #fff;
-            border-bottom: 1px solid #f0f0f0;
         }
         
         .header h1 {
             font-size: 42px;
             font-weight: 300;
-            color: #000;
-            margin-bottom: 16px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
             letter-spacing: -0.5px;
         }
         
@@ -45,54 +49,58 @@
         }
         
         .header p {
-            font-size: 15px;
+            font-size: 12px;
             color: #666;
-            font-weight: 400;
-            letter-spacing: 0.5px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
         .content {
-            padding: 60px 40px;
+            padding: 35px 40px;
+            background: #fafafa;
         }
         
         .intro {
-            font-size: 17px;
-            line-height: 1.9;
-            margin-bottom: 50px;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 35px;
             color: #333;
             font-weight: 400;
             text-align: center;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            padding: 25px;
+            background: #fff;
+            border-left: 3px solid #ffad00;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
         
         .section {
-            margin-bottom: 60px;
+            margin-bottom: 35px;
         }
         
         .section-title {
-            font-size: 14px;
+            font-size: 11px;
             font-weight: 600;
-            margin-bottom: 30px;
-            color: #000;
+            margin-bottom: 20px;
+            color: #ffad00;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            text-align: center;
+            letter-spacing: 2px;
         }
         
         .checklist {
-            max-width: 400px;
-            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
         
         .checklist-item {
             display: flex;
             align-items: center;
-            padding: 16px 0;
-            font-size: 15px;
-            color: #333;
-            border-bottom: 1px solid #f5f5f5;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #444;
+            border-bottom: 1px solid #f0f0f0;
         }
         
         .checklist-item:last-child {
@@ -100,41 +108,45 @@
         }
         
         .check-icon {
-            width: 6px;
-            height: 6px;
+            width: 5px;
+            height: 5px;
             background: #ffad00;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-right: 15px;
             flex-shrink: 0;
         }
         
         .tip-box {
-            background: #fafafa;
-            padding: 40px;
+            background: linear-gradient(135deg, #fff7e6 0%, #fff 100%);
+            padding: 25px;
+            border-radius: 8px;
             text-align: center;
-            font-size: 15px;
-            line-height: 1.9;
+            font-size: 14px;
+            line-height: 1.7;
             color: #333;
-            border-left: 2px solid #ffad00;
-            max-width: 480px;
-            margin: 0 auto;
+            border: 1px solid #ffe9b3;
+            box-shadow: 0 2px 8px rgba(255,173,0,0.08);
         }
         
         .tip-box strong {
-            color: #000;
+            color: #e69500;
             font-weight: 600;
         }
         
         .schedule {
-            max-width: 400px;
-            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1px solid #f0f0f0;
         }
         
         .time-slot {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
             align-items: center;
-            padding: 20px 0;
+            padding: 15px 0;
             border-bottom: 1px solid #f5f5f5;
         }
         
@@ -143,100 +155,103 @@
         }
         
         .distance {
-            font-weight: 400;
+            font-weight: 600;
             font-size: 15px;
-            color: #333;
+            color: #1a1a1a;
         }
         
         .time {
-            color: #000;
-            font-weight: 600;
+            color: #fff;
+            background: #ffad00;
+            font-weight: 700;
             font-size: 15px;
             letter-spacing: 0.5px;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-align: center;
+            white-space: nowrap;
         }
         
         .location {
             text-align: center;
-            padding: 40px;
-            background: #fafafa;
-            max-width: 480px;
-            margin: 0 auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
         
         .location-title {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 600;
-            margin-bottom: 20px;
-            color: #999;
+            margin-bottom: 15px;
+            color: #ffad00;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
         }
         
         .location-address {
-            font-size: 15px;
-            color: #333;
-            line-height: 1.8;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
         }
         
         .location-address strong {
-            color: #000;
+            color: #1a1a1a;
             font-weight: 600;
             display: block;
             margin-bottom: 8px;
+            font-size: 15px;
         }
         
         .footer {
-            background: #000;
-            color: #fff;
+            background: linear-gradient(135deg, #ffad00 0%, #ffc933 100%);
+            color: #1a1a1a;
             text-align: center;
-            padding: 60px 40px;
-            font-size: 15px;
-            font-weight: 400;
-            letter-spacing: 1px;
+            padding: 40px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
         
         .footer-accent {
-            color: #ffad00;
+            font-weight: 700;
         }
         
         .divider {
-            width: 40px;
-            height: 1px;
-            background: #ffad00;
-            margin: 50px auto;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffad00, transparent);
+            margin: 30px auto;
         }
         
         /* Tablet */
         @media (max-width: 768px) {
             .header {
-                padding: 70px 35px 50px;
+                padding: 35px 30px 30px;
             }
             
             .header h1 {
-                font-size: 38px;
+                font-size: 36px;
             }
             
             .content {
-                padding: 55px 35px;
+                padding: 30px 25px;
             }
             
             .intro {
-                font-size: 16px;
+                font-size: 15px;
+                padding: 20px;
             }
             
-            .tip-box, .location {
-                padding: 35px;
-            }
-            
-            .checklist, .schedule {
-                max-width: 100%;
+            .section {
+                margin-bottom: 30px;
             }
         }
         
         /* Mobile */
         @media (max-width: 480px) {
             .header {
-                padding: 50px 25px 35px;
+                padding: 25px 20px 20px;
             }
             
             .header h1 {
@@ -244,55 +259,75 @@
             }
             
             .header p {
-                font-size: 13px;
+                font-size: 11px;
             }
             
             .content {
-                padding: 40px 25px;
+                padding: 25px 20px;
             }
             
             .intro {
-                font-size: 15px;
-                margin-bottom: 40px;
+                font-size: 14px;
+                margin-bottom: 30px;
+                padding: 18px;
             }
             
             .section {
-                margin-bottom: 50px;
-            }
-            
-            .section-title {
-                font-size: 12px;
                 margin-bottom: 25px;
             }
             
-            .checklist-item, .time-slot {
-                padding: 14px 0;
+            .section-title {
+                font-size: 10px;
+                margin-bottom: 18px;
+            }
+            
+            .checklist, .schedule, .location {
+                padding: 20px;
+            }
+            
+            .time-slot {
+                padding: 12px 0;
+                gap: 15px;
+            }
+            
+            .distance {
                 font-size: 14px;
             }
             
-            .tip-box, .location {
-                padding: 25px 20px;
-                font-size: 14px;
+            .time {
+                font-size: 13px;
+                padding: 6px 14px;
+            }
+            
+            .checklist-item, .time-slot {
+                padding: 9px 0;
+                font-size: 13px;
+            }
+            
+            .tip-box {
+                padding: 18px;
+                font-size: 13px;
             }
             
             .location-address {
-                font-size: 14px;
+                font-size: 13px;
             }
             
             .footer {
-                padding: 50px 25px;
+                padding: 35px 20px;
                 font-size: 14px;
             }
             
             .divider {
-                margin: 40px auto;
+                margin: 25px auto;
+                width: 50px;
             }
         }
         
         /* Desktop grande */
         @media (min-width: 769px) {
             .container {
-                box-shadow: 0 0 40px rgba(0,0,0,0.08);
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             }
         }
     </style>
@@ -300,23 +335,21 @@
 <body>
     <div class="container">
         <div class="banner">
-            <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Header.png" alt="The Best Run 2025" style="width: 100%; display: block;">
+            <img src="https://email-editor-production.s3.amazonaws.com/images/690553/editor_images/Header.png" alt="The Best Run 2025">
         </div>
         
         <div class="header">
             <h1>É <span class="accent">amanhã</span></h1>
-            <p>THE BEST RUN 2025</p>
+            <p>The Best Run 2025</p>
         </div>
         
         <div class="content">
-            <p class="intro">
+            <div class="intro">
                 Amanhã você vai ser um vitorioso cruzando a linha de chegada da The Best Run 2025. Dorme cedo, sonha alto e acorda pronto para fazer bonito!
-            </p>
-            
-            <div class="divider"></div>
+            </div>
             
             <div class="section">
-                <h2 class="section-title">Check final</h2>
+                <h2 class="section-title">Bora fazer o check final?</h2>
                 <div class="checklist">
                     <div class="checklist-item">
                         <span class="check-icon"></span>
@@ -344,33 +377,33 @@
             <div class="divider"></div>
             
             <div class="tip-box">
-                <strong>A dica da #bestie:</strong> chegar com antecedência, dar um visu no ambiente, alongar com calma, sentir a vibe e socializar com a galera!
+                <strong>A dica da #bestie é:</strong> chegar com antecedência, dar um visu no ambiente, alongar com calma, sentir a vibe e socializar com a galera!
             </div>
             
             <div class="divider"></div>
             
             <div class="section">
-                <h2 class="section-title">Horários</h2>
+                <h2 class="section-title">⏰ Anota aí os horários das largadas:</h2>
                 <div class="schedule">
                     <div class="time-slot">
                         <span class="distance">21km</span>
-                        <span class="time">06:00</span>
+                        <span class="time">06h00</span>
                     </div>
                     <div class="time-slot">
                         <span class="distance">10km</span>
-                        <span class="time">06:15</span>
+                        <span class="time">06h15</span>
                     </div>
                     <div class="time-slot">
                         <span class="distance">5km</span>
-                        <span class="time">06:20</span>
+                        <span class="time">06h20</span>
                     </div>
                     <div class="time-slot">
                         <span class="distance">Kangoo 5km</span>
-                        <span class="time">06:22</span>
+                        <span class="time">06h22</span>
                     </div>
                     <div class="time-slot">
                         <span class="distance">Kids</span>
-                        <span class="time">09:00</span>
+                        <span class="time">09h</span>
                     </div>
                 </div>
             </div>
@@ -378,11 +411,10 @@
             <div class="divider"></div>
             
             <div class="location">
-                <div class="location-title">Local</div>
+                <div class="location-title">Nos encontramos no</div>
                 <div class="location-address">
                     <strong>Aterro do Lago Igapó 2</strong>
-                    Rua Prof. Joaquim de Matos Barreto<br>
-                    Londrina/PR
+                    Rua Prof. Joaquim de Matos Barreto – Londrina/PR
                 </div>
             </div>
         </div>
